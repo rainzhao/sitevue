@@ -2,10 +2,10 @@
   <div id="app">
     <header-component />
     <div class="content">
-      <navigation />
+      <!-- <navigation /> -->
       <list-item />
     </div>
-    <footer-component />
+    <!-- <footer-component /> -->
   </div>
 </template>
 
@@ -37,15 +37,18 @@
       min-height: 100%;
       display: flex;
       flex-direction: column;
+      background: #eee;
   }
   .content{
       flex: 1;
+      padding: 10px;
+      margin-top: 80px;
   }
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+  }
 </style>

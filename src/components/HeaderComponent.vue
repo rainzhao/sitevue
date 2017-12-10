@@ -1,23 +1,23 @@
 <template>
   <div class="header">
-    <div class="header-logo"></div>
+    <div class="header-logo">
+      <h3>blog</h3>
+    </div>
   </div>
 </template>
 <style scoped>
   .header{
     width: 100%;
-    height: 60px;
-    background: #1380dc;
+    height: 80px;
+    background: #333;
     color: #fff;
     display: flex;
     align-items: center;
+    justify-content: center;
+    position: fixed;
   }
   .header-logo{
-    width: 30px;
-    height: 30px;
-    border-radius: 30px;
-    background: #fff;
-    margin-left: 10px;
+    font-size: 16px;
   }
 </style>
 <script>
