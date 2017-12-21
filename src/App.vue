@@ -1,24 +1,21 @@
 <template>
   <div id="app">
     <header-component />
-    <div class="content">
-      <!-- <navigation /> -->
+    <!-- <div class="content">
       <list-item />
-    </div>
-    <!-- <footer-component /> -->
+    </div> -->
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
   import HeaderComponent from '@/components/HeaderComponent.vue'
-  import FooterComponent from '@/components/FooterComponent.vue'
   import Navigation from './components/Navigation.vue'
   import ListItem from '@/components/ListItem.vue'
   export default {
     name: 'app',
     components: {
       'header-component': HeaderComponent,
-      'footer-component': FooterComponent,
       'navigation': Navigation,
       'list-item': ListItem
     }

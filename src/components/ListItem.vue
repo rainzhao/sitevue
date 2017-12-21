@@ -3,7 +3,7 @@
       <div class="article-wrapper" v-for="item in items" :key="item.id">
         <article>
           <h4>{{item.title}}</h4>
-          <p class="article-des" v-html="item.content"></p>
+          <p class="article-des" v-html="item.content">123123</p>
         </article>
       </div>
     </div>
@@ -52,12 +52,12 @@
           res[a].content = marked(res[a].content);
           console.log(res[a])
         }
-        
+
         console.log(res)
       })
     },
     components: {
-      
+
     }
   }
 </script>
