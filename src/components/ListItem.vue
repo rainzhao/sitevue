@@ -1,10 +1,12 @@
 <template>
     <div>
       <div class="article-wrapper" v-for="item in items" :key="item.id">
-        <article>
-          <h4>{{item.title}}</h4>
-          <p class="article-des" v-html="item.content">123123</p>
-        </article>
+        <a v-link="{name: 'essayDetail', params: {id: item.id}}">
+          <article>
+            <h4>{{item.title}}</h4>
+            <p class="article-des" v-html="item.content"></p>
+          </article>
+        </a>
       </div>
     </div>
 </template>
