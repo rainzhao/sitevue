@@ -1,23 +1,16 @@
 <template>
   <div id="app">
     <header-component />
-    <!-- <div class="content">
-      <list-item />
-    </div> -->
     <router-view></router-view>
   </div>
 </template>
 
 <script>
   import HeaderComponent from '@/components/HeaderComponent.vue'
-  import Navigation from './components/Navigation.vue'
-  import ListItem from '@/components/ListItem.vue'
   export default {
     name: 'app',
     components: {
-      'header-component': HeaderComponent,
-      'navigation': Navigation,
-      'list-item': ListItem
+      'header-component': HeaderComponent
     }
   }
 </script>
@@ -36,11 +29,7 @@
       flex-direction: column;
       background: #eee;
   }
-  .content{
-      flex: 1;
-      padding: 10px;
-      margin-top: 80px;
-  }
+  
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;

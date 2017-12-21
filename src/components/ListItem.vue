@@ -1,10 +1,9 @@
 <template>
     <div>
       <div class="article-wrapper" v-for="item in items" :key="item.id">
-        <a v-link="{name: 'essayDetail', params: {id: item.id}}">
+        <a @click="essayDetail(item)">
           <article>
             <h4>{{item.title}}</h4>
-            <p class="article-des" v-html="item.content"></p>
           </article>
         </a>
       </div>
@@ -60,6 +59,11 @@
     },
     components: {
 
+    },
+    methods: {
+      essayDetail(item) {
+        this.$router.push({path: `/essay/${item._id}`});
+      }
     }
   }
 </script>
