@@ -13,14 +13,11 @@
 </style>
 
 <script>
-    import ListItem from "@/components/ListItem.vue"
-    export default{
-        name: 'Home',
-        components: {
-            'list-item': ListItem
-        }
+  import ListItem from '@/components/ListItem.vue'
+  export default{
+    name: 'Home',
+    components: {
+      'list-item': ListItem
     }
+  }
 </script>
-
-
-

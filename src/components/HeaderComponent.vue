@@ -9,7 +9,7 @@
   .header{
     width: 100%;
     height: 80px;
-    background: #333;
+    background: #2e3e4e;
     color: #fff;
     display: flex;
     align-items: center;

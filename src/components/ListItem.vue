@@ -24,7 +24,7 @@
   }
 </style>
 <script>
-  import marked from "marked";
+  import marked from 'marked'
   export default{
     data () {
       return {
@@ -42,27 +42,24 @@
         sanitize: true,
         smartLists: true,
         smartypants: false
-      });
+      })
       fetch('http://127.0.0.1:3000/essay', {
         method: 'GET'
       }).then(res => {
-        return res.json();
+        return res.json()
       }).then(res => {
-        this.items = res;
-        for(let a in res){
-          res[a].content = marked(res[a].content);
-          console.log(res[a])
+        this.items = res
+        for (let a in res) {
+          res[a].content = marked(res[a].content)
         }
-
-        console.log(res)
       })
     },
     components: {
 
     },
     methods: {
-      essayDetail(item) {
-        this.$router.push({path: `/essay/${item._id}`});
+      essayDetail (item) {
+        this.$router.push({path: `/essay/${item._id}`})
       }
     }
   }
