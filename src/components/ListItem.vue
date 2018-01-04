@@ -43,7 +43,7 @@
         smartLists: true,
         smartypants: false
       })
-      fetch('http://127.0.0.1:3000/essay', {
+      fetch('http://103.202.140.211:3000/essay', {
         method: 'GET'
       }).then(res => {
         return res.json()
